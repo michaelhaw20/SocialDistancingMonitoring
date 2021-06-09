@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Sign In"
+        android:textColor="@color/teal_200"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="70dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="144dp"
+        android:background="@color/teal_200"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="7dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginStart="7dp"/>
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="7dp"/>
+        <EditText
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginStart="7dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Created Alpha Team"
+            android:textColor="@color/teal_200"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
