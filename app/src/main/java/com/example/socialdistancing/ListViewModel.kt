@@ -15,7 +15,7 @@ class ListViewModel:ViewModel() {
     fun getListEntry(){
         val entries = arrayListOf<Entry>()
         val client = AsyncHttpClient()
-        val url = "https://storage.googleapis.com/social-distancing-monitoring-b21/output.json"
+        val url = "https://storage.googleapis.com/social-distancing-monitoring-b21/output1.json"
         client.get(url, object: AsyncHttpResponseHandler(){
             override fun onSuccess(statusCode: Int, headers: Array<out Header>?, responseBody: ByteArray) {
                 val result = String(responseBody)
